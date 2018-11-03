@@ -5,7 +5,7 @@
 Copyright © Arthur Guiot 2018. All rights reserved
 -----------------------------------------------------
 
-script/createml/trainer.swift will train and output the model
+script/CreateML/trainer.swift will train and output the model
 
 */
 // CreateML trainer
