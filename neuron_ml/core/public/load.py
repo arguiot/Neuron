@@ -11,12 +11,23 @@ will be used to prepare data for training.
 def load(dataset, method="tensorflow"):
 	import os
 	import tempfile
+	import shutil
 	from neuron_ml import core.data as data
+
+	def createDir():
+		return tempfile.mkdtemp()
+
 
 	if method == "tensorflow":
 		# Prepare and load for TensorFlow
+		temp = createDir()
+		data.tensorflow.organise_dataset(dataset, temp)
+		return temp
 	else if method == "createml":
 		# Prepare and load data for CreateML
+		temp = createDir()
+		data.createml.organise_dataset(dataset, temp)
+		return temp
 	else:
 		raise ValueError("[Neuron - Load] ERROR: Wrong method. You have 2 options: 'tensorflow' or 'createml'.")
 		return

@@ -20,7 +20,7 @@ def toJPG(source, destination):
 
 
 def organise_dataset(train, root_path):
-	dataset_path = root_path+'/dataset'
+	dataset_path = root_path
 	train_data = train
 	os.makedirs(dataset_path, exist_ok=True)
 	folders = os.listdir(train_data)

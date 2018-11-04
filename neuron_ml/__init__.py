@@ -10,3 +10,5 @@ import statements.
 
 """
 import core
+
+load = core.public.load.load
