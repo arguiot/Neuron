@@ -9,3 +9,4 @@ imported directly, without needing to do multiple
 import statements.
 
 """
+import core
