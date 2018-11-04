@@ -22,12 +22,12 @@ def load(dataset, method="tensorflow"):
 		# Prepare and load for TensorFlow
 		temp = createDir()
 		data.tensorflow.organise_dataset(dataset, temp)
-		return temp
+		return [temp, method]
 	else if method == "createml":
 		# Prepare and load data for CreateML
 		temp = createDir()
 		data.createml.organise_dataset(dataset, temp)
-		return temp
+		return [temp, method]
 	else:
 		raise ValueError("[Neuron - Load] ERROR: Wrong method. You have 2 options: 'tensorflow' or 'createml'.")
 		return
