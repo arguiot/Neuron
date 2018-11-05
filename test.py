@@ -14,7 +14,10 @@ import os
 # TensorFlow
 data = n.load(os.path.abspath("./dataset/"))
 model = n.train(data)
-n.export(model, os.path.abspath("./Model.pb"))
+n.export(model, [
+	os.path.abspath("./Model.pb"),
+	os.path.abspath("./Labels.txt")
+])
 
 # TFLite
 
