@@ -18,11 +18,11 @@ n.export(model, os.path.abspath("./Model.pb"))
 
 # TFLite
 
-n.export(model, os.path.abspath("./Model.tflite"))
+n.export(model, os.path.abspath("./Model.tflite"), "tflite")
 
 # CoreML
 
-n.export(model, os.path.abspath("./Model.mlmodel"))
+n.export(model, os.path.abspath("./Model.mlmodel"), "coreml")
 
 # CreateML
 data = n.load(os.path.abspath("./dataset/"), "createml")
