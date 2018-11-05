@@ -13,3 +13,4 @@ import core
 import tools
 
 load = core.public.load.load
+train = core.public.train.train
