@@ -19,6 +19,33 @@ def export(model, path, method="default"):
             for i in range(outputed_files):
                 shutil.copy2(outputed_files[i], path[i])
         else if method == "tflite":
+			from neuron_ml import tools.command_validator as valid
+			if valid("toco"):
+				command = [
+					"toco",
+					"--graph_def_file",
+					outputed_files[0],
+					"--output_file",
+					path,
+					"--input_format",
+					"TENSORFLOW_GRAPHDEF",
+					"--output_format",
+					"TFLITE",
+					"--input_shape=",
+					"1,299,299,3",
+					"--input_array"
+					"input",
+					"--output_array",
+					"final_result",
+					"--inference_type",
+					"FLOAT",
+					"--input_data_type",
+					"FLOAT"
+				]
+				process = subprocess.Popen(command, stdout=subprocess.PIPE)
+			    for line in iter(process.stdout.readline, b''):
+			        sys.stdout.write(line)
+				output.extend([path + '/ExportedModel.mlmodel'])
 
         else if method == "coreml":
             import tfcoreml as tf_converter
