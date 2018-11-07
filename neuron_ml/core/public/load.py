@@ -12,7 +12,7 @@ def load(dataset, method="tensorflow"):
 	import os
 	import tempfile
 	import shutil
-	from neuron_ml import core.data as data
+	import neuron_ml.core.data as data
 
 	def createDir():
 		return tempfile.mkdtemp()
@@ -23,7 +23,7 @@ def load(dataset, method="tensorflow"):
 		temp = createDir()
 		data.tensorflow.organise_dataset(dataset, temp)
 		return [temp, method]
-	else if method == "createml":
+	elif method == "createml":
 		# Prepare and load data for CreateML
 		temp = createDir()
 		data.createml.organise_dataset(dataset, temp)

@@ -15,7 +15,7 @@ def train(loaded):
 	import tempfile
 	import shutil
 	import inspect
-	from neuron_ml import tools.command_validator as valid
+	import neuron_ml.tools.command_validator as valid
 	current_file = inspect.getfile(inspect.currentframe())
 	script_dir = os.path.abspath(current_file + '../../script')
 
@@ -38,10 +38,10 @@ def train(loaded):
 			path + '/retrained_labels.txt'
 		]
 		process = subprocess.Popen(command, stdout=subprocess.PIPE)
-	    for line in iter(process.stdout.readline, b''):
-	        sys.stdout.write(line)
+		for line in iter(process.stdout.readline, b''):
+			sys.stdout.write(line)
 		output.extend([path + '/retrained_graph.pb', path + '/retrained_labels.txt'])
-	else if method == "createml":
+	elif method == "createml":
 		if valid.command("swift"):
 			command = [
 				"swift",
@@ -52,8 +52,8 @@ def train(loaded):
 				path + '/ExportedModel.mlmodel'
 			]
 			process = subprocess.Popen(command, stdout=subprocess.PIPE)
-		    for line in iter(process.stdout.readline, b''):
-		        sys.stdout.write(line)
+			for line in iter(process.stdout.readline, b''):
+				sys.stdout.write(line)
 			output.extend([path + '/ExportedModel.mlmodel'])
 		else:
 			raise ValueError("[Neuron - Train] ERROR: Swift must be installed on your machine. Check https://swift.org for details.")
