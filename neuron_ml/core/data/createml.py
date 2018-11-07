@@ -9,12 +9,11 @@ for CreateML usage.
 
 """
 
-import os
-import sys
-import pandas as pd
-import shutil
-
 def organise_dataset(data, path):
+	import os
+	import sys
+	import pandas as pd
+	import shutil
 	os.makedirs(path, exist_ok=True)
 	folders = os.listdir(data)
 	print("[Neuron - Load] Organising dataset by moving to dataset folder & converting to jpeg")

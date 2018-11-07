@@ -8,18 +8,17 @@ images to the desired destination (TEMP directory).
 
 """
 
-import os
-import sys
-import pandas as pd
-from PIL import Image
-
 def toJPG(source, destination):
+	from PIL import Image
 	im = Image.open(source)
 	rgb_im = im.convert('RGB')
 	rgb_im.save(destination)
 
 
 def organise_dataset(train, root_path):
+	import os
+	import sys
+	import pandas as pd
 	dataset_path = root_path
 	train_data = train
 	os.makedirs(dataset_path, exist_ok=True)

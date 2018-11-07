@@ -9,8 +9,8 @@ imported directly, without needing to do multiple
 import statements.
 
 """
-import core
-import tools
+import neuron_ml.core
+import neuron_ml.tools
 
 load = core.public.load.load
 train = core.public.train.train
