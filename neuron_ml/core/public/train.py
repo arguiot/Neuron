@@ -8,7 +8,7 @@ will train the model.
 
 """
 
-def train(loaded):
+def train(loaded, steps=1000):
 	import os
 	import subprocess
 	import sys
@@ -35,7 +35,9 @@ def train(loaded):
 			'--output_graph',
 			path + '/retrained_graph.pb',
 			'--output_labels',
-			path + '/retrained_labels.txt'
+			path + '/retrained_labels.txt',
+			'--how_many_training_steps',
+			steps
 		]
 		process = subprocess.Popen(command, stdout=subprocess.PIPE)
 		for line in iter(process.stdout.readline, b''):
