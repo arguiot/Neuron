@@ -356,3 +356,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/node,swift,linux,macos,python,windows
+
+dataset/
+Model.pb
+Model.tflite
+Labels.txt
+Model.mlmodel
+CreateML.mlmodel
