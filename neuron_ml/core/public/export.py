@@ -16,7 +16,7 @@ def export(model, path, method="default"):
 	outputed_files = model[2]
 	if technology == "tensorflow" and len(outputed_files) == 2:
 		if method == "default" and type(path) == list:
-			for i in range(outputed_files):
+			for i in range(len(outputed_files)):
 				shutil.copy2(outputed_files[i], path[i])
 		elif method == "tflite":
 			import neuron_ml.tools.command_validator as valid

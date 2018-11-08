@@ -15,9 +15,9 @@ def train(loaded):
 	import tempfile
 	import shutil
 	import inspect
-	import neuron_ml.tools.command_validator as valid
+	import neuron_ml.tools.subprocess_checker as valid
 	current_file = inspect.getfile(inspect.currentframe())
-	script_dir = os.path.abspath(current_file + '../../script')
+	script_dir = os.path.abspath(current_file + '../../../../script')
 
 	script_createml = script_dir + '/CreateML/trainer.swift'
 	script_tensorflow = script_dir + '/TensorFlow/retrain.py'

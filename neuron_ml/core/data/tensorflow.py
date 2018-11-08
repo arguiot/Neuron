@@ -33,7 +33,7 @@ def organise_dataset(train, root_path):
 				source = train_data + '/' + path
 				destination = dataset_path + '/' + path
 				# Moving files from source (train folder) to detination folder and convert to JPG
-				jpg.toJPG(source, destination)
+				toJPG(source, destination)
 
 
 	print("[Neuron - Load] Dataset folders successfully created & copied all images in corresponding folders")
