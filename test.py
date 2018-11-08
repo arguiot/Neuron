@@ -21,7 +21,7 @@ n.export(model, [
 
 # TFLite
 
-n.export(model, os.path.abspath("./Model.tflite"), "tflite")
+# n.export(model, os.path.abspath("./Model.tflite"), "tflite")
 
 # CoreML
 
