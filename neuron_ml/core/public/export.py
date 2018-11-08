@@ -20,7 +20,7 @@ def export(model, path, method="default"):
 				shutil.copy2(outputed_files[i], path[i])
 		elif method == "tflite":
 			import neuron_ml.tools.subprocess_checker as valid
-			if valid("toco"):
+			if valid.command("toco"):
 				command = [
 					"toco",
 					"--graph_def_file",
