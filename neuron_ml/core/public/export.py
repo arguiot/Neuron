@@ -19,7 +19,7 @@ def export(model, path, method="default"):
 			for i in range(len(outputed_files)):
 				shutil.copy2(outputed_files[i], path[i])
 		elif method == "tflite":
-			import neuron_ml.tools.command_validator as valid
+			import neuron_ml.tools.subprocess_checker as valid
 			if valid("toco"):
 				command = [
 					"toco",
