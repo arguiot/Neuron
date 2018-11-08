@@ -37,7 +37,7 @@ def train(loaded, steps=1000):
 			'--output_labels',
 			path + '/retrained_labels.txt',
 			'--how_many_training_steps',
-			steps
+			str(steps)
 		]
 		process = subprocess.Popen(command, stdout=subprocess.PIPE)
 		for line in iter(process.stdout.readline, b''):
