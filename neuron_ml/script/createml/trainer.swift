@@ -14,10 +14,11 @@ import Foundation
 
 // Gets arguments
 let args = CommandLine.arguments
-let Dpath = args[0 + 2] // + 2 because `swift trainer.swift ...` already takes 2 useless arguments
-let train = args[1 + 2]
-let test = args[2 + 2]
-let out = args[3 + 2]
+print("[Neuron - Swift] Arguments: \(args)")
+let Dpath = args[1]
+let train = "Train"
+let test = "Test"
+let out = args[2]
 // Specify where is the data
 let path = NSString(string: Dpath).expandingTildeInPath
 let trainingDir = URL(fileURLWithPath: path).appendingPathComponent(train)

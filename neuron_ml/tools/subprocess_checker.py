@@ -16,7 +16,7 @@ def command(name):
 	cmd = "where" if platform.system() == "Windows" else "which"
 	exist = False
 	try:
-		subprocess.call([cmd, your_executable_to_check_here])
+		subprocess.call([cmd, name])
 		exist = True
 	except:
 		exist = False

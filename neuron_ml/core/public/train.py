@@ -49,13 +49,11 @@ def train(loaded, steps=1000):
 				"swift",
 				script_createml,
 				path,
-				'Train',
-				'Test',
 				path + '/ExportedModel.mlmodel'
 			]
 			process = subprocess.Popen(command, stdout=subprocess.PIPE)
-			for line in iter(process.stdout.readline, b''):
-				sys.stdout.write(line)
+			for line in iter(lambda: process.stdout.read(1), b''):
+				sys.stdout.buffer.write(line)
 			output.extend([path + '/ExportedModel.mlmodel'])
 		else:
 			raise ValueError("[Neuron - Train] ERROR: Swift must be installed on your machine. Check https://swift.org for details.")
