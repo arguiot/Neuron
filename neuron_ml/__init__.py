@@ -14,3 +14,4 @@ import neuron_ml.core
 load = core.public.load.load
 train = core.public.train.train
 export = core.public.export.export
+clean = core.public.clean.clean

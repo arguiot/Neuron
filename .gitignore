@@ -363,3 +363,4 @@ Model.tflite
 Labels.txt
 Model.mlmodel
 CreateML.mlmodel
+debug.txt
