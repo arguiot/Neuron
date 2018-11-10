@@ -13,7 +13,7 @@ import os
 
 # TensorFlow
 data = n.load(os.path.abspath("./dataset/"))
-model = n.train(data)
+model = n.train(data, 500)
 n.export(model, [
 	os.path.abspath("./Model.pb"),
 	os.path.abspath("./Labels.txt")
@@ -21,7 +21,7 @@ n.export(model, [
 
 # TFLite
 
-# n.export(model, os.path.abspath("./Model.tflite"), "tflite")
+n.export(model, os.path.abspath("./Model.tflite"), "tflite")
 
 # CoreML
 

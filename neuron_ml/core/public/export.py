@@ -11,6 +11,8 @@ will be used to export the trained model.
 
 def export(model, path, method="default"):
 	import shutil
+	import subprocess
+	import sys
 	global_path = model[0]
 	technology = model[1]
 	outputed_files = model[2]
@@ -31,7 +33,7 @@ def export(model, path, method="default"):
 					"TENSORFLOW_GRAPHDEF",
 					"--output_format",
 					"TFLITE",
-					"--input_shape=",
+					"--input_shape",
 					"1,299,299,3",
 					"--input_array"
 					"input",
@@ -43,8 +45,8 @@ def export(model, path, method="default"):
 					"FLOAT"
 				]
 				process = subprocess.Popen(command, stdout=subprocess.PIPE)
-				for line in iter(process.stdout.readline, b''):
-					sys.stdout.write(line)
+				for line in iter(lambda: process.stdout.read(1), b''):
+					sys.stdout.buffer.write(line)
 			else:
 				raise ValueError(
 					"[Neuron - Export] ERROR: TOCO not found. Please install TensorFlow's TOCO cli.")
@@ -54,13 +56,13 @@ def export(model, path, method="default"):
 			tf_converter.convert(tf_model_path=outputed_files[0],
 								 mlmodel_path=path,
 								 output_feature_names=[
-									 'final_result'],
-								 image_input_names=['input'],
+									 'final_result:0'],
+								 image_input_names='input',
 								 class_labels=outputed_files[1],
 								 red_bias=-1,
 								 green_bias=-1,
 								 blue_bias=-1,
-								 image_scale=2.0 / 255.0
+								 image_scale=2.0 / 299.0
 								 )
 		else:
 			raise ValueError(
