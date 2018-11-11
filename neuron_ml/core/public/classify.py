@@ -12,6 +12,8 @@ will be used to classify any images using a given model.
 def classify(graph, labels, image):
 	import numpy as np
 	import tensorflow as tf
+	import time
+	start = time.time()
 	def read_tensor_from_image_file(file_name,
 									input_height=299,
 									input_width=299,
@@ -81,5 +83,7 @@ def classify(graph, labels, image):
 	index = results.tolist().index(max)
 	dictionnary["prob"] = results[index]
 	dictionnary["top"] = labels[index]
-	print("[Neuron - Classify] Classified as '" + dictionnary["top"] + "'")
+	end = time.time()
+
+	print("[Neuron - Classify] Classified as '" + dictionnary["top"] + "' in " + str(end - start) + "s.")
 	return dictionnary
