@@ -13,7 +13,7 @@ import os
 
 # TensorFlow
 data = n.load(os.path.abspath("./dataset/"))
-model = n.train(data, 500)
+model = n.train(data, 100)
 n.export(model, [
 	os.path.abspath("./Model.pb"),
 	os.path.abspath("./Labels.txt")
@@ -25,10 +25,10 @@ n.export(model, [
 
 print(n.classify(model, "./dataset/Celery/celery-1.jpg"))
 # CoreML
-
-n.export(model, os.path.abspath("./Model.mlmodel"), "coreml")
-
-# CreateML
-data = n.load(os.path.abspath("./dataset/"), "createml")
-model = n.train(data)
-n.export(model, os.path.abspath("./CreateML.mlmodel"))
+#
+# n.export(model, os.path.abspath("./Model.mlmodel"), "coreml")
+#
+# # CreateML
+# data = n.load(os.path.abspath("./dataset/"), "createml")
+# model = n.train(data)
+# n.export(model, os.path.abspath("./CreateML.mlmodel"))
