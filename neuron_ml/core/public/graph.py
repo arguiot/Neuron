@@ -11,6 +11,7 @@ will be used to load the graph from a file for the
 
 def graph(model):
 	if model[1] == "tensorflow":
+		import tensorflow as tf
 		model_file = model[2][0]
 		graph = tf.Graph()
 		graph_def = tf.GraphDef()
