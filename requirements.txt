@@ -1,8 +1,10 @@
 absl-py==0.5.0
 astor==0.7.1
+autopep8==1.4.2
 bleach==3.0.2
 certifi==2018.10.15
 chardet==3.0.4
+coremltools==2.0
 docutils==0.14
 gast==0.2.0
 Glances==3.0.2
@@ -18,6 +20,7 @@ Pillow==5.3.0
 pkginfo==1.4.2
 protobuf==3.6.1
 psutil==5.4.7
+pycodestyle==2.4.0
 Pygments==2.2.0
 python-dateutil==2.7.3
 pytz==2018.5
