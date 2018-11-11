@@ -21,8 +21,9 @@ n.export(model, [
 
 # TFLite
 
-n.export(model, os.path.abspath("./Model.tflite"), "tflite")
+# n.export(model, os.path.abspath("./Model.tflite"), "tflite")
 
+print(n.classify(model, "./dataset/Celery/celery-1.jpg"))
 # CoreML
 
 n.export(model, os.path.abspath("./Model.mlmodel"), "coreml")
