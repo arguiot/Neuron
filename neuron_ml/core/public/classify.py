@@ -10,12 +10,6 @@ will be used to classify any images using a given model.
 
 
 def classify(model, image):
-    from __future__ import absolute_import
-    from __future__ import division
-    from __future__ import print_function
-
-    import argparse
-
     import numpy as np
     import tensorflow as tf
 
