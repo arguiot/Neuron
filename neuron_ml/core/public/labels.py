@@ -19,7 +19,7 @@ def labels(model):
 		proto_as_ascii_lines = tf.gfile.GFile(label_file).readlines()
 		for l in proto_as_ascii_lines:
 			label.append(l.rstrip())
-		print("[Neuron - Labels] " + len(label) + " labels were loaded.")
+		print("[Neuron - Labels] " + str(len(label)) + " labels were loaded.")
 		return label
 	else:
 		raise ValueError("[Neuron - Graph] ERROR: Only TensorFlow trained model are accepted.")
