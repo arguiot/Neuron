@@ -42,8 +42,6 @@ def classify(graph, labels, image):
 		return result
 
 	file_name = image
-	model_file = model[2][0]
-	label_file = model[2][1]
 	input_height = 299
 	input_width = 299
 	input_mean = 0
