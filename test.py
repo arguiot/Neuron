@@ -18,6 +18,7 @@ n.export(model, [
 	os.path.abspath("./Model.pb"),
 	os.path.abspath("./Labels.txt")
 ])
+n.clean(model)
 
 # TFLite
 

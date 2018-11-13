@@ -18,3 +18,4 @@ clean = core.public.clean.clean
 classify = core.public.classify.classify
 graph = core.public.graph.graph
 labels = core.public.labels.labels
+model = core.public.model.model
