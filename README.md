@@ -3,7 +3,9 @@
 	<h1>Neuron</h1>
 	A tiny and very high level transfer learning library for image classification 📚
 </div>
+
 ## What is Neuron exactly?
+
 Neuron is a tiny library that aims to simplify image classification (If you don't know what Image classification is, it's the process to tell from an image what object / thing / feature is on it).
 
 Using Neuron, you'll be able to build production grade model under 5 lines of code. Yes, you read it correctly: 5 lines. Where as in common Machine Learning libraries like TensorFlow, PyTorch or Keras, you would do it in hundreds of lines.
