@@ -40,3 +40,21 @@ graph = n.graph(model) # Generate the graph
 labels = n.labels(model) # Get the labels
 n.classify(graph, labels, "./dataset/Celery/celery-1.jpg") # Classify. Will return a result object
 ```
+
+> See the wiki for more informations.
+
+# Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/arguiot/Neuron/tags).
+
+# Authors
+
+- **Arthur Guiot** - _Initial work_ - [@arguiot](https://github.com/arguiot)
+
+Also look at the list of [contributors](https://github.com/arguiot/Neuron/contributors) who participated in this project. If you don't code but you have great ideas, don't hesitate to write your idea in the issue part. If your idea is accepted, I will add you to this list 😊.
+
+# License
+
+This project is licensed under the MIT License - see the <LICENSE> file for details
+
+Copyright © 2018 Arthur Guiot All Rights Reserved.
