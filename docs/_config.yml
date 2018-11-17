@@ -1,4 +1,5 @@
-markdown: kramdown
+markdown:    kramdown
 highlighter: rouge
 
-permalink: pretty
+permalink:   pretty
+url:         https://arguiot.github.io/Neuron
