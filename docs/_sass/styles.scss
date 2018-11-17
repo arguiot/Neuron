@@ -53,3 +53,15 @@ body {
 		}
 	}
 }
+.body {
+	width: calc(100vw - 35vw - 50px);
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.copyright {
+		text-align: center;
+		color: #333;
+	}
+}
