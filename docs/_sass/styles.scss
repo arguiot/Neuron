@@ -8,7 +8,6 @@ body {
 .left-bar {
 	position: fixed;
 	width: 35vw;
-	min-width: 500px;
 	height: 100vh;
 	left: 0;
 	top: 0;
@@ -63,5 +62,17 @@ body {
 	.copyright {
 		text-align: center;
 		color: #333;
+	}
+}
+@media (max-width: 1200px) {
+	.left-bar {
+		position: absolute;
+		width: 100vw;
+	}
+	.body {
+		top: 100vh;
+		left: 0;
+		width: calc(100vw - 100px);
+		margin: 50px;
 	}
 }
