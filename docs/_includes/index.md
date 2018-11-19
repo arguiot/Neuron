@@ -1,4 +1,4 @@
-## What is Neuron exactly?
+# What is Neuron exactly?
 
 Neuron is a tiny library that aims to simplify image classification (If you don't know what Image classification is, it's the process to tell from an image what object / thing / feature is on it).
 
@@ -6,7 +6,9 @@ Using Neuron, you'll be able to build production grade model under 5 lines of co
 
 > Of course, these libraries are much more complex and versatile than Neuron. Neuron isn't replacing these libraries if you need to build your own graph, but if you're doing so, you probably already know this.
 
-Here is an example of what Neuron can do:
+## Demo
+
+Simple trainer:
 ```py
 import neuron_ml as n
 
