@@ -9,7 +9,7 @@ imported directly, without needing to do multiple
 import statements.
 
 """
-import neuron_ml.core
+import neuron_ml.core as core
 
 load = core.public.load.load
 train = core.public.train.train
