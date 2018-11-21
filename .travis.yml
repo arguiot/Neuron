@@ -1,0 +1,18 @@
+os:              osx
+osx_image:       xcode10.1
+language:        python
+python:          "3.6"
+env:
+  - ENV=CI
+
+before_install:
+  - git clone https://${GIT_VAR}@git.bio-feed.org/BioFeed/plants-data dataset
+install:
+  - pip install -r requirements.txt
+
+script:
+  - python test.py
+  - ls -lah
+
+notifications:
+  email:         false
