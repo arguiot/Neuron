@@ -6,7 +6,6 @@ env:
 before_install:
   - git clone https://${GIT_VAR}@git.bio-feed.org/BioFeed/plants-data dataset
 install:
-  - brew install python
   - brew switch python 3.6.5_1 # Python 3.7 doesn't work...
   - pip install -r requirements.txt
 
