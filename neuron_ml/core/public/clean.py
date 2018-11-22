@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 -----------------------------------------------------
 Copyright © Arthur Guiot 2018. All rights reserved
