@@ -4,6 +4,7 @@ env:
   - ENV=CI
 
 before_install:
+  - python -V
   - git clone https://${GIT_VAR}@git.bio-feed.org/BioFeed/plants-data dataset
 install:
   - pip install -r requirements.txt
