@@ -7,6 +7,7 @@ before_install:
   - python3 -V
   - git clone https://${GIT_VAR}@git.bio-feed.org/BioFeed/plants-data dataset
 install:
+  - pip3 install -U coremltools
   - pip3 install -r requirements.txt
 
 script:
