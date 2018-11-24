@@ -1,18 +1,21 @@
 os:              osx
 osx_image:       xcode10.1
 env:
-  - ENV=CI
+    - ENV=CI
 
 before_install:
-  - python3 -V
-  - git clone https://${GIT_VAR}@git.bio-feed.org/BioFeed/plants-data dataset
+    - brew unlink python
+    - brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb
+    - python3 -V
+    - python -V
+    - git clone https://${GIT_VAR}@git.bio-feed.org/BioFeed/plants-data dataset
 install:
-  - pip3 install -U coremltools
-  - pip3 install -r requirements.txt
+    - pip3 install -U coremltools
+    - pip3 install -r requirements.txt
 
 script:
-  - python3 test.py
-  - ls -lah
+    - python3 test.py
+    - ls -lah
 
 notifications:
-  email:         false
+    email:       false
