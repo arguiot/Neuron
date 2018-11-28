@@ -3,11 +3,13 @@
 	<h1>Neuron</h1>
 	A tiny and very high level transfer learning library for image classification 📚
 </div>
+
 [![GitHub release](https://img.shields.io/github/release/arguiot/Neuron.svg)](https://github.com/arguiot/Neuron/releases)
 [![Build Status](https://travis-ci.org/arguiot/Neuron.svg?branch=master)](https://travis-ci.org/arguiot/Neuron)
 [![Github All Releases](https://img.shields.io/github/downloads/arguiot/Neuron/total.svg)](https://github.com/arguiot/Neuron/)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/neuron-ml.svg)](https://pypi.org/project/neuron-ml/)
 [![License](https://img.shields.io/github/license/arguiot/Neuron.svg)](LICENSE)
+
 ## What is Neuron exactly?
 
 Neuron is a tiny library that aims to simplify image classification (If you don't know what Image classification is, it's the process to tell from an image what object / thing / feature is on it).
