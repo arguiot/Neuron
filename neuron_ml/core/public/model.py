@@ -11,5 +11,4 @@ trained graphs
 """
 
 def model(files, method="tensorflow"):
-	import os
 	return [0, method, files]
