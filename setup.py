@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="neuron_ml",
-    version="0.0.1",
+    version="1.0.0",
     author="Arthur Guiot",
     author_email="arguiot@gmail.com",
     description="A tiny image classification library.",
