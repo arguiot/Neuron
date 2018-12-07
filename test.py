@@ -32,9 +32,9 @@ n.classify(graph, labels, "./dataset/Celery/celery-1.jpg")
 n.export(model, os.path.abspath("./Model.mlmodel"), "coreml")
 
 # CreateML
-data = n.load(os.path.abspath("./dataset/"), "createml")
-model = n.train(data)
-n.export(model, os.path.abspath("./CreateML.mlmodel"))
+# data = n.load(os.path.abspath("./dataset/"), "createml")
+# model = n.train(data)
+# n.export(model, os.path.abspath("./CreateML.mlmodel"))
 
 # Clean
 n.clean(model)
