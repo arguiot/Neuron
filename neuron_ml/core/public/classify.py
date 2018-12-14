@@ -22,16 +22,21 @@ def classify(graph, labels, image):
 									input_std=255):
 		input_name = "file_reader"
 		output_name = "normalized"
-		file_reader = tf.read_file(file_name, input_name)
-		if file_name.endswith(".png"):
+		if type(file_name) != str:
+			image_reader = file_name
+		elif file_name.endswith(".png"):
+			file_reader = tf.read_file(file_name, input_name)
 			image_reader = tf.image.decode_png(
 				file_reader, channels=3, name="png_reader")
 		elif file_name.endswith(".gif"):
+			file_reader = tf.read_file(file_name, input_name)
 			image_reader = tf.squeeze(
 				tf.image.decode_gif(file_reader, name="gif_reader"))
 		elif file_name.endswith(".bmp"):
+			file_reader = tf.read_file(file_name, input_name)
 			image_reader = tf.image.decode_bmp(file_reader, name="bmp_reader")
 		else:
+			file_reader = tf.read_file(file_name, input_name)
 			image_reader = tf.image.decode_jpeg(
 				file_reader, channels=3, name="jpeg_reader")
 		float_caster = tf.cast(image_reader, tf.float32)

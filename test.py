@@ -26,7 +26,8 @@ n.export(model, os.path.abspath("./Model.tflite"), "tflite")
 # Classify
 graph = n.graph(model)
 labels = n.labels(model)
-n.classify(graph, labels, "./dataset/Celery/celery-1.jpg")
+image = n.image("./dataset/Celery/celery-1.jpg")
+n.classify(graph, labels, image)
 
 # CoreML
 n.export(model, os.path.abspath("./Model.mlmodel"), "coreml")
