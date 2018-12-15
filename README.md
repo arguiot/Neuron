@@ -18,6 +18,12 @@ Using Neuron, you'll be able to build production grade model under 5 lines of co
 
 > Of course, these libraries are much more complex and versatile than Neuron. Neuron isn't replacing these libraries if you need to build your own graph, but if you're doing so, you probably already know this.
 
+## Install
+Copy - paste that in a Terminal
+```
+pip install neuron-ml
+```
+## Demo
 Here is an example of what Neuron can do:
 ```py
 import neuron_ml as n
