@@ -6,6 +6,8 @@ Using Neuron, you'll be able to build production grade model under 5 lines of co
 
 > Of course, these libraries are much more complex and versatile than Neuron. Neuron isn't replacing these libraries if you need to build your own graph, but if you're doing so, you probably already know this.
 
+Neuron's model can be used and converted for **every** devices you plan to support for your next greatest project. Neuron will even expose the raw TensorFlow graph is you want to tune it a bit (only for advanced users).
+
 ## Demo
 
 Simple trainer:
@@ -36,3 +38,6 @@ graph = n.graph(model) # Generate the graph
 labels = n.labels(model) # Get the labels
 n.classify(graph, labels, "./dataset/Celery/celery-1.jpg") # Classify. Will return a result object
 ```
+
+
+Now, try it yourself by installing it: `pip install neuron-ml`
