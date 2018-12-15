@@ -10,7 +10,7 @@ it.
 
 """
 
-def image(path):
+def image(file_name):
 	import tensorflow as tf
 	input_name = "file_reader"
 	file_reader = tf.read_file(file_name, input_name)
