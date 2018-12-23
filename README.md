@@ -53,7 +53,7 @@ labels = n.labels(model) # Get the labels
 n.classify(graph, labels, "./dataset/Celery/celery-1.jpg") # Classify. Will return a result object
 ```
 
-> See the wiki for more informations.
+> See the [wiki](https://github.com/arguiot/Neuron/wiki) for more informations.
 
 # Versioning
 
