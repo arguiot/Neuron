@@ -69,4 +69,4 @@ Also look at the list of [contributors](https://github.com/arguiot/Neuron/contri
 
 This project is licensed under the MIT License - see the <LICENSE> file for details
 
-Copyright © 2018 Arthur Guiot All Rights Reserved.
+__Copyright © 2018 Arthur Guiot All Rights Reserved.__
