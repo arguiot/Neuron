@@ -9,6 +9,7 @@
 [![Github All Releases](https://img.shields.io/github/downloads/arguiot/Neuron/total.svg)](https://github.com/arguiot/Neuron/)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/neuron-ml.svg)](https://pypi.org/project/neuron-ml/)
 [![License](https://img.shields.io/github/license/arguiot/Neuron.svg)](LICENSE)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Farguiot%2FNeuron.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Farguiot%2FNeuron?ref=badge_shield)
 
 ## What is Neuron exactly?
 
@@ -70,3 +71,6 @@ Also look at the list of [contributors](https://github.com/arguiot/Neuron/contri
 This project is licensed under the MIT License - see the <LICENSE> file for details
 
 __Copyright © 2018 Arthur Guiot All Rights Reserved.__
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Farguiot%2FNeuron.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Farguiot%2FNeuron?ref=badge_large)
