@@ -4,7 +4,7 @@ autopep8==1.4.3
 bleach==3.0.2
 certifi==2019.3.9
 chardet==3.0.4
-coremltools==2.0
+coremltools==2.1.0
 docutils==0.14
 gast==0.2.0
 Glances==3.0.2
