@@ -1,7 +1,7 @@
 absl-py==0.5.0
 astor==0.7.1
 autopep8==1.4.3
-bleach==3.0.2
+bleach==3.1.1
 certifi==2019.3.9
 chardet==3.0.4
 coremltools==2.1.0
