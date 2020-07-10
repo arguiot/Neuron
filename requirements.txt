@@ -35,6 +35,6 @@ termcolor==1.1.0
 tfcoreml==0.3.0
 tqdm==4.28.1
 twine==1.13.0
-urllib3==1.24.1
+urllib3==1.24.2
 webencodings==0.5.1
 Werkzeug==0.15.3
