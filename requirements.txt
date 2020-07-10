@@ -20,7 +20,7 @@ Pillow==6.0.0
 pkginfo==1.4.2
 protobuf==3.6.1
 psutil==5.4.7
-pycodestyle==2.4.0
+pycodestyle==2.5.0
 Pygments==2.2.0
 python-dateutil==2.7.3
 pytz==2018.5
