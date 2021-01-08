@@ -1,7 +1,7 @@
 absl-py==0.5.0
 astor==0.7.1
 autopep8==1.4.3
-bleach==3.0.2
+bleach==3.1.1
 certifi==2019.3.9
 chardet==3.0.4
 coremltools==2.1.0
@@ -14,12 +14,12 @@ idna==2.8
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 Markdown==3.0.1
-numpy==1.15.2
+numpy==1.16.3
 pandas==0.24.2
-Pillow==6.0.0
+Pillow==8.1.0
 pkginfo==1.4.2
 protobuf==3.6.1
-psutil==5.4.7
+psutil==5.6.7
 pycodestyle==2.4.0
 Pygments==2.2.0
 python-dateutil==2.7.3
@@ -35,6 +35,6 @@ termcolor==1.1.0
 tfcoreml==0.3.0
 tqdm==4.28.1
 twine==1.13.0
-urllib3==1.24.1
+urllib3==1.25.9
 webencodings==0.5.1
 Werkzeug==0.15.3
