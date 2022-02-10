@@ -29,7 +29,7 @@ requests==2.21.0
 requests-toolbelt==0.8.0
 six==1.12.0
 tensorboard==1.11.0
-tensorflow==1.15.2
+tensorflow==2.5.3
 tensorflow-hub==0.1.1
 termcolor==1.1.0
 tfcoreml==0.3.0
