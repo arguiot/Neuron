@@ -38,3 +38,4 @@ twine==1.13.0
 urllib3==1.24.1
 webencodings==0.5.1
 Werkzeug==0.15.3
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
