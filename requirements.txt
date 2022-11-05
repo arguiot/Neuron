@@ -14,11 +14,11 @@ idna==2.8
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 Markdown==3.0.1
-numpy==1.15.2
+numpy==1.22.2
 pandas==0.24.2
-Pillow==6.0.0
+Pillow==9.0.1
 pkginfo==1.4.2
-protobuf==3.6.1
+protobuf==3.18.3
 psutil==5.4.7
 pycodestyle==2.4.0
 Pygments==2.2.0
@@ -38,3 +38,4 @@ twine==1.13.0
 urllib3==1.24.1
 webencodings==0.5.1
 Werkzeug==0.15.3
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
